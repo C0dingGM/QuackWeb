@@ -1,0 +1,181 @@
+/* Reset margin and padding globally */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Herotica', sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: white;
+}
+
+/* Header layout */
+header {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 80px;
+}
+
+/* Logo text */
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a.active {
+    color: #f25f5c; 
+}
+
+body {
+    background-image: url('img/currentLogo.png'); /* replace with your file path */
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: #111; /* fallback */
+    color: white;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('img/your-pattern.png'); /* Replace with your actual path */
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+    color: white;
+    position: relative;
+}
+
+/* Optional: dark overlay to improve text contrast */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Text content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+/* Call to action button */
+.cta-button {
+    background-color: #f25f5c;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e14c49;
+}
+
+.site-footer {
+    background-color: #111114;
+    color: #ccc;
+    padding: 50px 40px 20px;
+    font-size: 0.95rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1380px;
+    max-width: 10000px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+    line-height: 1.6;
+}
+
+.footer-column h3,
+.footer-column h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: #777;
+}
