@@ -10,6 +10,9 @@ body {
     margin: 0;
     background-color: #111;
     color: white;
+    background-image: url('img/currentLogo.png'); /* replace with your file path */
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 /* Header layout */
@@ -49,17 +52,9 @@ nav ul li a.active {
     color: #f25f5c; 
 }
 
-body {
-    background-image: url('img/currentLogo.png'); /* replace with your file path */
-    background-repeat: repeat;
-    background-size: cover;
-    background-color: #111; /* fallback */
-    color: white;
-}
-
 /* Hero section */
 .hero {
-    background-image: url('img/your-pattern.png'); /* Replace with your actual path */
+    background-image: url('img/current.png'); 
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
@@ -116,6 +111,7 @@ body {
     background-color: #e14c49;
 }
 
+/* Footer section */
 .site-footer {
     background-color: #111114;
     color: #ccc;
@@ -125,19 +121,47 @@ body {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1380px;
-    max-width: 10000px;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
     margin: auto;
+    padding: 0 20px;
 }
 
-.footer-column {
-    flex: 1;
+.footer-column,
+.footer-columnRight {
+    flex: 1 1 300px;
     min-width: 220px;
     line-height: 1.6;
 }
 
+/* Align right column content */
+.footer-columnRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+/* Social icons row */
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer text styles */
 .footer-column h3,
 .footer-column h4 {
     color: #fff;
@@ -163,19 +187,27 @@ body {
     color: white;
 }
 
-.social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
     font-size: 0.85rem;
     color: #777;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-columnRight {
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }
