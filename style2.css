@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Herotica', sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: white;
+    background-image: url('img/currentLogo.png'); /* replace with your file path */
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* Header layout */
+header {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 80px;
+}
+
+/* Logo text */
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
