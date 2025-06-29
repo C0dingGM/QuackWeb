@@ -57,9 +57,14 @@ nav ul li a.active {
 h1.big {
     line-height: 2;
     }
+/* sized spaces */
 bbr {
     line-height: 1000%;
 }
+sbr {
+    line-height: 10%;
+}
+
 selector {
   text-align: revert;
 }
