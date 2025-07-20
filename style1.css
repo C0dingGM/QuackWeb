@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 0px 40px;
 }
 
 /* Dark overlay */
@@ -50,6 +50,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
+    margin: 20px 0px;
 }
 
 nav ul li a {
@@ -57,6 +58,7 @@ nav ul li a {
     color: white;
     font-size: 16px;
     transition: color 0.2s;
+    margin: 20px 0px;
 }
 
 nav ul li a:hover,
@@ -294,22 +296,23 @@ nav ul li .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
-  background-color: white;
+  right: 0;
+  background-color: #121212;
   list-style: none;
   padding: 0;
   margin: 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   z-index: 1000;
+  text-align: right;
 }
 
 /* Style dropdown links */
 nav ul li .dropdown-menu li a {
   display: block;
-  padding: 10px 15px;
+  padding: 2.5px 15px;
   white-space: nowrap;
   text-decoration: none;
-  color: black;
+  color:white;
 }
 
 /* Show dropdown on hover */
@@ -319,5 +322,5 @@ nav ul li.dropdown:hover .dropdown-menu {
 
 /* Optional: Hover effect for dropdown items */
 nav ul li .dropdown-menu li a:hover {
-  background-color: #eee;
+  color: #f25f5c;
 }
