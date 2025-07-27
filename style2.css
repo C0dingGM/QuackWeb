@@ -21,7 +21,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 0px 40px;
+  height: 60px;
 }
 
 /* Logo text */
@@ -29,6 +30,8 @@ header {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    margin-top: 10px;
+
 }
 
 /* Navigation menu */
@@ -36,6 +39,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
+    margin-top: 10px;
 }
 
 nav ul li a {

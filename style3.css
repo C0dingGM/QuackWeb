@@ -11,8 +11,6 @@ body {
     background-color: #111;
     color: white;
     background-size: 100%;
-   
-    
 }
 
 header {
@@ -20,7 +18,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 0px 40px;
+  height: 60px;
 }
 
 /* Dark overlay */
@@ -43,12 +42,15 @@ header {
   font-size: 24px;
   font-weight: bold;
   color: white;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 /* Navigation menu */
 nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
+    margin-top: 10px;
 }
 
 nav ul li a {

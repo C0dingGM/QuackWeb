@@ -12,8 +12,6 @@ body {
     color: white;
     background-image: url('img/oldLogo.avif'); 
     background-size: 100%;
-   
-    
 }
 
 header {
@@ -48,6 +46,7 @@ header {
   margin-top: 10px;
   margin-bottom: 0;
 }
+
 /* Navigation menu */
 nav ul {
     list-style: none;
