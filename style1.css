@@ -22,6 +22,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
+  height: 60px;
 }
 
 /* Dark overlay */
@@ -44,13 +45,16 @@ header {
   font-size: 24px;
   font-weight: bold;
   color: white;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 /* Navigation menu */
 nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    margin: 20px 0px;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 nav ul li a {
@@ -58,7 +62,6 @@ nav ul li a {
     color: white;
     font-size: 16px;
     transition: color 0.2s;
-    margin: 20px 0px;
 }
 
 nav ul li a:hover,
@@ -286,30 +289,46 @@ p {
     }
 }
 
+.dropdown-menu {
+  margin:0;
+}
+
 /* Dropdown container */
 nav ul li.dropdown {
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 /* Hide dropdown content by default */
 nav ul li .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
   right: 0;
   background-color: #121212;
   list-style: none;
   padding: 0;
-  margin: 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  z-index: 1000;
+  z-index: 1001;
   text-align: right;
+  height: 85.5;
+}
+
+.dropdown-menu::before {
+  display:block;
+  content:'';
+  background-color: transparent;
+  color: transparent;
+  height:15px;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
 }
 
 /* Style dropdown links */
 nav ul li .dropdown-menu li a {
   display: block;
-  padding: 2.5px 15px;
+  padding: 5px 15px;
   white-space: nowrap;
   text-decoration: none;
   color:white;
