@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 /* Header */
 * {
     margin: 0;
@@ -17,10 +21,14 @@ body {
 header {
   background-color: #121212;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  position: sticky;
   padding: 0px 40px;
   height: 60px;
+  top: 0;
+  z-index: 1000;
+  font-family: "open sans", sans-serif;
 }
 
 /* Dark overlay */
@@ -45,6 +53,7 @@ header {
   color: white;
   margin-top: 10px;
   margin-bottom: 0;
+  font-family: "barlow-medium", "barlow", sans-serif;
 }
 
 /* Navigation menu */
