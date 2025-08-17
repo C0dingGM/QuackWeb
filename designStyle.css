@@ -232,6 +232,18 @@ nav ul li a.active {
     padding: 0;
 }
 
+.footer-logo {
+    font-family: "barlow-medium", "barlow", sans-serif;
+}
+
+.footer-column a, 
+.footer-column p {
+    text-decoration: none;
+    color: #a2a2a2;
+    transition: color 0.3s;
+    font-family: "open sans", sans-serif;
+}
+
 .footer-column ul li {
     margin-bottom: 8px;
 }
