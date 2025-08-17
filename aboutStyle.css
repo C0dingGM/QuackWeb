@@ -14,8 +14,7 @@ body {
     margin: 0;
     background-color: #111;
     color: white;
-    background-image: url('img/oldLogo.avif'); 
-    background-size: 100%;
+    background-size: 20%;
 }
 
 header {
@@ -80,11 +79,10 @@ nav ul li a.active {
 
 /* Hero section */
 .hero {
-    background-image: url('img/current.png'); 
-    background-size: cover;
+    background-image: url('img/currentLogo.png'); 
     background-repeat: repeat;
     background-position: center;
-    min-height: 40vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
