@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
 /* Reset margin and padding globally */
 * {
@@ -11,7 +12,7 @@
 body {
     font-family: 'Herotica', sans-serif;
     margin: 0;
-    background-color: rgb(37, 37, 38);
+    background-color:  rgb(38, 38, 37);
     color: white;
     background-image: url('img/currentLogo.png'); /* replace with your file path */
     background-size: 200px;
@@ -24,18 +25,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    height: 80px;
+    padding: 0px 40px;
+    height: 60px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    font-family: "open sans", sans-serif;
 }
 
 /* Logo text */
 .logo-text {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
     color: white;
+    margin-top: 10px;
+    font-family: "barlow-medium", "barlow", sans-serif;
 }
 
 /* Navigation menu */
@@ -43,6 +47,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
+    margin-top: 10px;
 }
 
 nav ul li a {
@@ -52,9 +57,9 @@ nav ul li a {
     transition: color 0.2s;
 }
 
-nav ul li a:hover,
-nav ul li a:focus,
-nav ul li a.active {
+.menu-bar ul li a:hover,
+.menu-bar ul li a:focus,
+.menu-bar ul li a.active {
     color: #f25f5c; 
 }
 
@@ -124,7 +129,7 @@ nav ul li a.active {
 
 /* Footer section */
 .site-footer {
-    background-color: #111114;
+    background-color: #121212;
     color: #ccc;
     padding: 50px 40px 20px;
     font-size: 0.95rem;
@@ -140,11 +145,16 @@ nav ul li a.active {
     padding: 0 20px;
 }
 
+.footer-logo {
+    font-family: "barlow-medium", "barlow", sans-serif;
+}
+
 .footer-column,
 .footer-columnRight {
     flex: 1 1 300px;
     min-width: 220px;
     line-height: 1.6;
+    /*font-family: "open sans", sans-serif;*/
 }
 
 /* Align right column content */
@@ -153,6 +163,7 @@ nav ul li a.active {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
+    font-family: "open sans", sans-serif;
 }
 
 /* Social icons row */
@@ -177,6 +188,7 @@ nav ul li a.active {
 .footer-column h4 {
     color: #fff;
     margin-bottom: 10px;
+    font-weight: normal;
 }
 
 .footer-column ul {
@@ -188,19 +200,16 @@ nav ul li a.active {
     margin-bottom: 8px;
 }
 
-.footer-column ul li a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
 .footer-column ul li a:hover {
     color: white;
 }
 
-.footer-column a {
+.footer-column a, 
+.footer-column p {
     text-decoration: none;
-    color: #ccc;
+    color: #a2a2a2;
+    transition: color 0.3s;
+    font-family: "open sans", sans-serif;
 }
 
 .footer-bottom {
@@ -226,4 +235,59 @@ nav ul li a.active {
     .social-icons {
         justify-content: center;
     }
+}
+
+.dropdown-menu {
+  margin:0;
+}
+
+/* Dropdown container */
+nav ul li.dropdown {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide dropdown content by default */
+nav ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #121212;
+  list-style: none;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1001;
+  text-align: right;
+  height: 85.5;
+}
+
+.dropdown-menu::before {
+  display:block;
+  content:'';
+  background-color: transparent;
+  color: transparent;
+  height:15px;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+/* Style dropdown links */
+nav ul li .dropdown-menu li a {
+  display: block;
+  padding: 5px 15px;
+  white-space: nowrap;
+  text-decoration: none;
+  color:white;
+}
+
+/* Show dropdown on hover */
+nav ul li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional: Hover effect for dropdown items */
+nav ul li .dropdown-menu li a:hover {
+  color: #f25f5c;
 }
